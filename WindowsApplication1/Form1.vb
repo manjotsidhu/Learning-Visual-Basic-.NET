@@ -10,4 +10,11 @@
         mnj = "My Name Is Manjot Sidhu"
         TextBox1.Text = mnj
     End Sub
+
+    Private Sub my2(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox1.Click
+        Dim press As String = "After Entering Press Me"
+        Button1.Text = press
+        Button1.TextAlign = ContentAlignment.MiddleCenter
+        Button1.AutoSize = True
+    End Sub
 End Class
