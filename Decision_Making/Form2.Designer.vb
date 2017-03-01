@@ -49,9 +49,9 @@ Partial Class Form2
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(76, 69)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(128, 13)
+        Me.Label1.Size = New System.Drawing.Size(150, 13)
         Me.Label1.TabIndex = 2
-        Me.Label1.Text = "Please Enter Any Number"
+        Me.Label1.Text = "Please Enter Your Percentage"
         '
         'TextBox2
         '
