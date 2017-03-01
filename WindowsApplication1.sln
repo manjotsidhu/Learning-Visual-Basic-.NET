@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Learn_vbnet", "WindowsApplication1\Learn_vbnet.vbproj", "{7A4E1000-6971-49A8-AB71-4DD5FD774A9D}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Decision_Making", "Decision_Making\Decision_Making.vbproj", "{5AF5736A-3453-4E43-BA90-2ACCFF767692}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -13,6 +15,10 @@ Global
 		{7A4E1000-6971-49A8-AB71-4DD5FD774A9D}.Debug|x86.Build.0 = Debug|x86
 		{7A4E1000-6971-49A8-AB71-4DD5FD774A9D}.Release|x86.ActiveCfg = Release|x86
 		{7A4E1000-6971-49A8-AB71-4DD5FD774A9D}.Release|x86.Build.0 = Release|x86
+		{5AF5736A-3453-4E43-BA90-2ACCFF767692}.Debug|x86.ActiveCfg = Debug|x86
+		{5AF5736A-3453-4E43-BA90-2ACCFF767692}.Debug|x86.Build.0 = Debug|x86
+		{5AF5736A-3453-4E43-BA90-2ACCFF767692}.Release|x86.ActiveCfg = Release|x86
+		{5AF5736A-3453-4E43-BA90-2ACCFF767692}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
