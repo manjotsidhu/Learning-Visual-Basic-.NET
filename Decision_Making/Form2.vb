@@ -1,6 +1,6 @@
 ﻿Public Class Form2
 
-    Private Sub inmn(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox1.TextChanged
+    Private Sub inmn(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         Dim valin As String = TextBox1.Text
         Select Case valin
             Case 1 To 40
@@ -22,7 +22,7 @@
         End Select
     End Sub
 
-    Private Sub outmn(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+    Private Sub outmn(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Dim Valot As String = TextBox2.Text
     End Sub
 End Class
