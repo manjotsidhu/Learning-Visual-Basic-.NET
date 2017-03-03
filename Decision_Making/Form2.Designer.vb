@@ -47,7 +47,7 @@ Partial Class Form2
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(76, 69)
+        Me.Label1.Location = New System.Drawing.Point(72, 69)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(150, 13)
         Me.Label1.TabIndex = 2
@@ -59,7 +59,6 @@ Partial Class Form2
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(174, 20)
         Me.TextBox2.TabIndex = 3
-        Me.TextBox2.Text = "Your Output Will be Displayed Here"
         '
         'Form2
         '
