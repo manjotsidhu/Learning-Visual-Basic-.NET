@@ -1,34 +1,28 @@
 ﻿Public Class Form2
 
-    Private Sub Label1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label1.Click
-
-    End Sub
-
-    Private Sub Form2_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-
-    End Sub
-
-    Private Sub clc1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        Dim inmn As Integer = TextBox1.Text
-        Dim otmn As String
-        Select Case TextBox1.Text
+    Private Sub inmn(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox1.TextChanged
+        Dim valin As String = TextBox1.Text
+        Select Case valin
             Case 1 To 40
-                otmn = "YOU ARE FAILED"
+                TextBox2.Text = "YOU ARE FAILED"
             Case 40 To 50
-                otmn = "YOUR GRADE IS C2"
+                TextBox2.Text = "Your Grade is C2"
             Case 50 To 60
-                otmn = "YOUR GRADE IS C1"
+                TextBox2.Text = "Your Grade is C1"
             Case 60 To 70
-                otmn = "YOUR GRADE IS B2"
+                TextBox2.Text = "Your Grade is B2"
             Case 70 To 80
-                otmn = "YOUR GRADE IS B1"
+                TextBox2.Text = "Your Grade is B1"
             Case 80 To 90
-                otmn = "YOUR GRADE IS A2"
-            Case 90 To 100
-                otmn = "YOUR GRADE IS A1"
+                TextBox2.Text = "Your Grade is A2"
+            Case 90 To 101
+                TextBox2.Text = "Your Grade is A1"
             Case Else
-                otmn = "INVALID NUMBER"
+                TextBox2.Text = "INVALID NUMBER"
         End Select
-        otmn = TextBox2.Text
+    End Sub
+
+    Private Sub outmn(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        Dim Valot As String = TextBox2.Text
     End Sub
 End Class
