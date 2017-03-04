@@ -89,7 +89,7 @@ Partial Class Main
         Me.RichTextBox1.Size = New System.Drawing.Size(481, 75)
         Me.RichTextBox1.TabIndex = 0
         Me.RichTextBox1.Text = "Issue 1 : Can't Use Valot string in select case , File : DM_v1" & Global.Microsoft.VisualBasic.ChrW(10) & "Issue 2 : Case 90 " & _
-            "to 100 not working in the same select case , File : DM_v1" & Global.Microsoft.VisualBasic.ChrW(10)
+            "To 100 not working in the same select case , File : DM_v1" & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'Main
         '
