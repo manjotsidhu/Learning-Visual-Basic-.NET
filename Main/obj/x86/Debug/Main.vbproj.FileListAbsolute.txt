@@ -9,3 +9,4 @@ C:\Users\Manjot Sidhu\Documents\Visual Studio 2010\Projects\WindowsApplication1\
 C:\Users\Manjot Sidhu\Documents\Visual Studio 2010\Projects\WindowsApplication1\Main\obj\x86\Debug\Main.pdb
 C:\Users\Manjot Sidhu\documents\visual studio 2010\Projects\WindowsApplication1\Main\obj\x86\Debug\Main.First_program.resources
 C:\Users\Manjot Sidhu\documents\visual studio 2010\Projects\WindowsApplication1\Main\obj\x86\Debug\Main.DM_v1.resources
+C:\Users\Manjot Sidhu\documents\visual studio 2010\Projects\WindowsApplication1\Main\obj\x86\Debug\Main.DM_v2.resources

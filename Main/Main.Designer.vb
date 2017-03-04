@@ -28,12 +28,14 @@ Partial Class Main
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.Button3)
         Me.GroupBox1.Controls.Add(Me.Button2)
         Me.GroupBox1.Controls.Add(Me.Button1)
         Me.GroupBox1.Location = New System.Drawing.Point(13, 40)
@@ -91,6 +93,15 @@ Partial Class Main
         Me.RichTextBox1.Text = "Issue 1 : Can't Use Valot string in select case , File : DM_v1" & Global.Microsoft.VisualBasic.ChrW(10) & "Issue 2 : Case 90 " & _
             "To 100 not working in the same select case , File : DM_v1" & Global.Microsoft.VisualBasic.ChrW(10)
         '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(223, 18)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(112, 23)
+        Me.Button3.TabIndex = 2
+        Me.Button3.Text = "Decision Making v2"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -113,5 +124,6 @@ Partial Class Main
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
     Friend WithEvents RichTextBox1 As System.Windows.Forms.RichTextBox
+    Friend WithEvents Button3 As System.Windows.Forms.Button
 
 End Class
