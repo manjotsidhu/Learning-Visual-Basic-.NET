@@ -75,6 +75,7 @@ Partial Class DM_v2
         '
         Me.RichTextBox1.Location = New System.Drawing.Point(13, 81)
         Me.RichTextBox1.Name = "RichTextBox1"
+        Me.RichTextBox1.ReadOnly = True
         Me.RichTextBox1.Size = New System.Drawing.Size(646, 85)
         Me.RichTextBox1.TabIndex = 5
         Me.RichTextBox1.Text = ""

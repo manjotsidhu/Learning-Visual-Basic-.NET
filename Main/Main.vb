@@ -19,7 +19,7 @@
     End Sub
 
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
-        DM_v2.Text = "Decision Making with Select Case"
+        DM_v2.Text = "Decision Making with Loop"
         DM_v2.Show()
     End Sub
 End Class
