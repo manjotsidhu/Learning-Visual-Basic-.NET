@@ -57,9 +57,11 @@ Partial Class Form2
         '
         Me.TextBox2.Location = New System.Drawing.Point(52, 179)
         Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.ReadOnly = True
         Me.TextBox2.Size = New System.Drawing.Size(174, 20)
         Me.TextBox2.TabIndex = 3
         Me.TextBox2.Text = "Your Output Will be Displayed Here"
+        Me.TextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Form2
         '
