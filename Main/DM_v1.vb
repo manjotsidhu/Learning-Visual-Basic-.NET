@@ -1,4 +1,4 @@
-﻿Public Class Form2
+﻿Public Class DM_v1
 
     Private Sub inmn(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         Dim valot As String = TextBox2.Text

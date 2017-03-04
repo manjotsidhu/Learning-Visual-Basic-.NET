@@ -1,4 +1,4 @@
-﻿Public Class Form1
+﻿Public Class First_program
 
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         TextBox1.Text = "Hello ! This is my first Program"

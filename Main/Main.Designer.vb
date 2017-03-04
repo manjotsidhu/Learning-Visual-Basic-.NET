@@ -23,10 +23,13 @@ Partial Class Main
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.GroupBox1.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox1
@@ -35,10 +38,19 @@ Partial Class Main
         Me.GroupBox1.Controls.Add(Me.Button1)
         Me.GroupBox1.Location = New System.Drawing.Point(13, 40)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(503, 210)
+        Me.GroupBox1.Size = New System.Drawing.Size(503, 98)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "My Projects"
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(104, 19)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(112, 23)
+        Me.Button2.TabIndex = 1
+        Me.Button2.Text = "Decision Making v1"
+        Me.Button2.UseVisualStyleBackColor = True
         '
         'Button1
         '
@@ -60,25 +72,37 @@ Partial Class Main
         Me.Label1.Text = "Learning Visual Basic .NET"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'Button2
+        'GroupBox2
         '
-        Me.Button2.Location = New System.Drawing.Point(104, 19)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(112, 23)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "Decision Making v1"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.GroupBox2.Controls.Add(Me.RichTextBox1)
+        Me.GroupBox2.Location = New System.Drawing.Point(13, 145)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(503, 100)
+        Me.GroupBox2.TabIndex = 2
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "Issues"
+        '
+        'RichTextBox1
+        '
+        Me.RichTextBox1.Location = New System.Drawing.Point(16, 19)
+        Me.RichTextBox1.Name = "RichTextBox1"
+        Me.RichTextBox1.Size = New System.Drawing.Size(481, 75)
+        Me.RichTextBox1.TabIndex = 0
+        Me.RichTextBox1.Text = "Issue 1 : Can't Use Valot string in select case , File : DM_v1" & Global.Microsoft.VisualBasic.ChrW(10) & "Issue 2 : Case 90 " & _
+            "to 100 not working in the same select case , File : DM_v1" & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(528, 262)
+        Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "Main"
         Me.Text = "Form1"
         Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox2.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -87,5 +111,7 @@ Partial Class Main
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
+    Friend WithEvents RichTextBox1 As System.Windows.Forms.RichTextBox
 
 End Class
