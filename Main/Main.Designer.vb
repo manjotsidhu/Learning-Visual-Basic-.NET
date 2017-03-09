@@ -23,14 +23,19 @@ Partial Class Main
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.TabControl1 = New System.Windows.Forms.TabControl()
+        Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
+        Me.TabControl1.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox1
@@ -38,12 +43,21 @@ Partial Class Main
         Me.GroupBox1.Controls.Add(Me.Button3)
         Me.GroupBox1.Controls.Add(Me.Button2)
         Me.GroupBox1.Controls.Add(Me.Button1)
-        Me.GroupBox1.Location = New System.Drawing.Point(13, 40)
+        Me.GroupBox1.Location = New System.Drawing.Point(13, 89)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(503, 98)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "My Projects"
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(223, 18)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(112, 23)
+        Me.Button3.TabIndex = 2
+        Me.Button3.Text = "Decision Making v2"
+        Me.Button3.UseVisualStyleBackColor = True
         '
         'Button2
         '
@@ -67,7 +81,7 @@ Partial Class Main
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(107, 9)
+        Me.Label1.Location = New System.Drawing.Point(96, 9)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(322, 29)
         Me.Label1.TabIndex = 1
@@ -77,7 +91,7 @@ Partial Class Main
         'GroupBox2
         '
         Me.GroupBox2.Controls.Add(Me.RichTextBox1)
-        Me.GroupBox2.Location = New System.Drawing.Point(13, 145)
+        Me.GroupBox2.Location = New System.Drawing.Point(13, 195)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(503, 100)
         Me.GroupBox2.TabIndex = 2
@@ -93,20 +107,52 @@ Partial Class Main
         Me.RichTextBox1.Text = "Issue 1 : Can't Use Valot string in select case , File : DM_v1" & Global.Microsoft.VisualBasic.ChrW(10) & "Issue 2 : Case 90 " & _
             "To 100 not working in the same select case , File : DM_v1" & Global.Microsoft.VisualBasic.ChrW(10)
         '
-        'Button3
+        'CheckBox1
         '
-        Me.Button3.Location = New System.Drawing.Point(223, 18)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(112, 23)
-        Me.Button3.TabIndex = 2
-        Me.Button3.Text = "Decision Making v2"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.Location = New System.Drawing.Point(384, 66)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.Size = New System.Drawing.Size(135, 17)
+        Me.CheckBox1.TabIndex = 3
+        Me.CheckBox1.Text = "Switch to Modern View"
+        Me.CheckBox1.UseVisualStyleBackColor = True
+        '
+        'TabControl1
+        '
+        Me.TabControl1.Controls.Add(Me.TabPage1)
+        Me.TabControl1.Controls.Add(Me.TabPage2)
+        Me.TabControl1.Location = New System.Drawing.Point(13, 81)
+        Me.TabControl1.Name = "TabControl1"
+        Me.TabControl1.SelectedIndex = 0
+        Me.TabControl1.Size = New System.Drawing.Size(503, 108)
+        Me.TabControl1.TabIndex = 0
+        Me.TabControl1.Visible = False
+        '
+        'TabPage1
+        '
+        Me.TabPage1.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage1.Name = "TabPage1"
+        Me.TabPage1.Size = New System.Drawing.Size(495, 82)
+        Me.TabPage1.TabIndex = 0
+        Me.TabPage1.Text = "First Program"
+        Me.TabPage1.UseVisualStyleBackColor = True
+        '
+        'TabPage2
+        '
+        Me.TabPage2.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage2.Name = "TabPage2"
+        Me.TabPage2.Size = New System.Drawing.Size(495, 82)
+        Me.TabPage2.TabIndex = 0
+        Me.TabPage2.Text = "TabPage2"
+        Me.TabPage2.UseVisualStyleBackColor = True
         '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(528, 262)
+        Me.ClientSize = New System.Drawing.Size(528, 301)
+        Me.Controls.Add(Me.TabControl1)
+        Me.Controls.Add(Me.CheckBox1)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.GroupBox1)
@@ -114,6 +160,7 @@ Partial Class Main
         Me.Text = "Form1"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox2.ResumeLayout(False)
+        Me.TabControl1.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -125,5 +172,9 @@ Partial Class Main
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
     Friend WithEvents RichTextBox1 As System.Windows.Forms.RichTextBox
     Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents CheckBox1 As System.Windows.Forms.CheckBox
+    Friend WithEvents TabControl1 As System.Windows.Forms.TabControl
+    Friend WithEvents TabPage1 As System.Windows.Forms.TabPage
+    Friend WithEvents TabPage2 As System.Windows.Forms.TabPage
 
 End Class
