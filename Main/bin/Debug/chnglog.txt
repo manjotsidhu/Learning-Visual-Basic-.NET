@@ -1,0 +1,53 @@
+Added Stability and Responsiveness in Main Form
+
+Synced Changelog with Modern View
+
+Added Scroll Bar in TabControl/TabPages
+
+Done with user-add Issue Funtion
+
+Created Issue File
+
+Pending User-Added Issue funtion
+
+Added Modern View For My Projects
+
+Added Ony Number Feature in DM_v2 + added stability
+
+Added README
+
+Combined All Projects in one Project ie Main + aded Issues Section in Main
+
+Added Home-Form ie Main which makes communication easier
+
+Marked Issues
+
+Now Button Hanldes the TextBox Changed Value in DM_v2
+
+Now Switch Case is working but without onclick button and also case 90 to 100 is not working
+
+Restored last commit of git ie when decision making was not working
+
+Leaving Switch Case - Decision Making v1
+
+Added Switch Case in DM_v1 But NOT WORKING YET
+
+Fixed Multiple Debugging v2
+
+Fixed Multiple Debugging 
+
+Set Environment For Form2 v2
+
+Set Environment For Form2
+
+Added Form 2 For Learning Decision Making
+
+Some
+
+Similarly Done with TextBox Onclick
+
+Linked Section To Button For Output
+
+Learnt Declaring Variables
+
+Initial Commit , Started Learning VB.net

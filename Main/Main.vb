@@ -47,16 +47,29 @@
         Third.Show()
         TabControl1.Size = New System.Drawing.Size(500, 330)
         If TabControl1.Visible Then
-            Size = New System.Drawing.Size(544, 569)
+            GroupBox3.Height = 462
+            RichTextBox2.Height = 435
+            If CheckBox2.Checked Then
+                Size = New System.Drawing.Size(750, 569)
+            Else
+                Size = New System.Drawing.Size(544, 569)
+            End If
             GroupBox2.Location = New Point(13, 420)
         Else
-            Size = New System.Drawing.Size(544, 339)
+            GroupBox3.Height = 233
+            RichTextBox2.Height = 208
+            If CheckBox2.Checked Then
+                Size = New System.Drawing.Size(750, 339)
+            Else
+                Size = New System.Drawing.Size(544, 339)
+            End If
             GroupBox2.Location = New Point(13, 195)
         End If
     End Sub
 
     Private Sub mn(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         RichTextBox1.Text = System.IO.File.ReadAllText("iss.txt")
+        RichTextBox2.Text = System.IO.File.ReadAllText("chnglog.txt")
     End Sub
 
     Private Sub bx(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RichTextBox1.Click
@@ -66,5 +79,17 @@
 
     Private Sub sv(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RichTextBox1.TextChanged
         System.IO.File.WriteAllText("iss.txt", RichTextBox1.Text)
+    End Sub
+
+    Private Sub chnglog(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CheckBox2.Click
+        If CheckBox2.Checked Then
+            Me.Width = 750
+            GroupBox3.Show()
+            Label1.Location = New Point(196, 9)
+        Else
+            Me.Width = 544
+            GroupBox3.Hide()
+            Label1.Location = New Point(96, 9)
+        End If
     End Sub
 End Class
