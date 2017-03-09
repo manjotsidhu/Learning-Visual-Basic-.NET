@@ -65,5 +65,6 @@
     End Sub
 
     Private Sub sv(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RichTextBox1.TextChanged
+        System.IO.File.WriteAllText("iss.txt", RichTextBox1.Text)
     End Sub
 End Class
