@@ -33,6 +33,7 @@ Partial Class Main
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.TabPage3 = New System.Windows.Forms.TabPage()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.TabControl1.SuspendLayout()
@@ -100,7 +101,7 @@ Partial Class Main
         '
         'RichTextBox1
         '
-        Me.RichTextBox1.Location = New System.Drawing.Point(16, 19)
+        Me.RichTextBox1.Location = New System.Drawing.Point(11, 19)
         Me.RichTextBox1.Name = "RichTextBox1"
         Me.RichTextBox1.Size = New System.Drawing.Size(481, 75)
         Me.RichTextBox1.TabIndex = 0
@@ -121,6 +122,7 @@ Partial Class Main
         '
         Me.TabControl1.Controls.Add(Me.TabPage1)
         Me.TabControl1.Controls.Add(Me.TabPage2)
+        Me.TabControl1.Controls.Add(Me.TabPage3)
         Me.TabControl1.Location = New System.Drawing.Point(13, 81)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
@@ -143,8 +145,18 @@ Partial Class Main
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Size = New System.Drawing.Size(495, 82)
         Me.TabPage2.TabIndex = 0
-        Me.TabPage2.Text = "TabPage2"
+        Me.TabPage2.Text = "Decision Making v1"
         Me.TabPage2.UseVisualStyleBackColor = True
+        '
+        'TabPage3
+        '
+        Me.TabPage3.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage3.Name = "TabPage3"
+        Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage3.Size = New System.Drawing.Size(495, 82)
+        Me.TabPage3.TabIndex = 1
+        Me.TabPage3.Text = "Decision Making v2"
+        Me.TabPage3.UseVisualStyleBackColor = True
         '
         'Main
         '
@@ -176,5 +188,6 @@ Partial Class Main
     Friend WithEvents TabControl1 As System.Windows.Forms.TabControl
     Friend WithEvents TabPage1 As System.Windows.Forms.TabPage
     Friend WithEvents TabPage2 As System.Windows.Forms.TabPage
+    Friend WithEvents TabPage3 As System.Windows.Forms.TabPage
 
 End Class

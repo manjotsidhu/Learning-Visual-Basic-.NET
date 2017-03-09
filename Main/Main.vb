@@ -37,6 +37,14 @@
         first.TopLevel = False
         first.Parent = TabControl1.TabPages(0)
         first.Show()
+        Dim Second As New DM_v1
+        Second.TopLevel = False
+        Second.Parent = TabControl1.TabPages(1)
+        Second.Show()
+        Dim Third As New DM_v2
+        Third.TopLevel = False
+        Third.Parent = TabControl1.TabPages(2)
+        Third.Show()
         TabControl1.Size = New System.Drawing.Size(500, 330)
         If TabControl1.Visible Then
             Size = New System.Drawing.Size(544, 569)
@@ -47,7 +55,15 @@
         End If
     End Sub
 
-    Private Sub Main_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+    Private Sub mn(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        RichTextBox1.Text = System.IO.File.ReadAllText("iss.txt")
+    End Sub
 
+    Private Sub bx(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RichTextBox1.Click
+        Dim ino As Integer
+        ino = MsgBox("Now You Can Add Your Own Issue . Don't Forget To commit the changes . Good Luck ", MsgBoxStyle.Information + MsgBoxStyle.OkOnly + MsgBoxStyle.SystemModal, "Issues")
+    End Sub
+
+    Private Sub sv(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RichTextBox1.TextChanged
     End Sub
 End Class
