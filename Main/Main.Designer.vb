@@ -131,6 +131,7 @@ Partial Class Main
         '
         'TabPage1
         '
+        Me.TabPage1.AutoScroll = True
         Me.TabPage1.Location = New System.Drawing.Point(4, 22)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Size = New System.Drawing.Size(495, 82)
@@ -140,6 +141,7 @@ Partial Class Main
         '
         'TabPage2
         '
+        Me.TabPage2.AutoScroll = True
         Me.TabPage2.Location = New System.Drawing.Point(4, 22)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Size = New System.Drawing.Size(495, 82)
@@ -149,6 +151,7 @@ Partial Class Main
         '
         'TabPage3
         '
+        Me.TabPage3.AutoScroll = True
         Me.TabPage3.Location = New System.Drawing.Point(4, 22)
         Me.TabPage3.Name = "TabPage3"
         Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
