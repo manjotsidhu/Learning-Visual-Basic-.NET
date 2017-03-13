@@ -1,3 +1,5 @@
+Font Changed to Trebuchet MS
+
 Added Stability and Responsiveness in Main Form
 
 Synced Changelog with Modern View

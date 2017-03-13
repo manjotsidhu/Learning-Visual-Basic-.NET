@@ -85,10 +85,10 @@ Partial Class Main
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Trebuchet MS", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(96, 9)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(322, 29)
+        Me.Label1.Size = New System.Drawing.Size(335, 35)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Learning Visual Basic .NET"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.TopCenter
